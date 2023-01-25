@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
 type Produtos = {
 	id: number;
 	nome: string;
@@ -19,5 +20,6 @@ const produtosSlice = createSlice({
 		},
 	},
 });
+
 export const {cadastrar} = produtosSlice.actions;
 export default produtosSlice.reducer;
